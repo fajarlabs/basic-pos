@@ -1,4 +1,4 @@
-# Basic Post
+# Basic POS
 
 This is a POS project created from scratch, which can be used for basic application needs.
 
