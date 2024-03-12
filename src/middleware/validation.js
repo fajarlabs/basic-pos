@@ -120,7 +120,39 @@ const categoryValidation = (req, res, next) => {
   next();
 };
 
+const outletValidation = (req, res, next) => {
+  const { otl_nama_rpk, otl_nama, otl_no_handphone } = req.body;
+
+  if(!otl_nama_rpk) {
+    const error = {
+      code: 400,
+      message: 'RPK name cannot be empty!'
+    };
+    return jsonError(res, error);
+  }
+
+  if(!otl_nama) {
+    const error = {
+      code: 400,
+      message: 'Name cannot be empty!'
+    };
+    return jsonError(res, error);
+  }
+
+  if(!otl_no_handphone) {
+    const error = {
+      code: 400,
+      message: 'Phone number cannot be empty!'
+    };
+    return jsonError(res, error);
+  }
+
+  next();
+};
+
+
 module.exports = {
   userValidation,
-  categoryValidation
+  categoryValidation,
+  outletValidation
 }
