@@ -1,6 +1,6 @@
 # Basic Post
 
-This project created for learning purpose of how to make an API using nodejs and express.js. Feel free to use this project for reference. ~~or not~~.
+This is a POS project created from scratch, which can be used for basic application needs.
 
 ## Getting Started
 
